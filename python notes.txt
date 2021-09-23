@@ -1,0 +1,183 @@
+
+variables = : a = 10 + run = 
+
+a
+10
+
+a = 320
+
+type(a)
+int
+
+a = 30.1
+type(a)
+float
+
+Anything w decimals is a float, non-decimal numbers = integers
+
+Variables names: my_income = 100
+
+tax_rate = 0.1
+
+my_taxes = my_income * tax_rate
+
+my_taxes 
+10.0
+
+ability to use python in order to create readable spreadsheets for those who don't know code.
+
+------
+STRINGS: Sequences of characters using the syntax of either single quotes or double quotes.
+EX: 
+'hello'
+"Hello"
+"I don't do that"
+Character : h e l l o
+Index:      0 1 2 3 4
+Rev Index:  0 -4 -3 -2 
+Slicing: Allows you to grab a subsections of mult characters , a "slice" of the string. 
+Syntax: [start:stop:step]
+
+- Start: numerical index for the slice
+- Stop: the index you will go up to (BUT NOT INCLUDE)
+- Step: size of the "jump" you take
+
+----
+LEN - Length: will count the amount of characters (INCLUDING SPACES) in a line of code.
+----
+String Indexing and Slicing:
+- 
+mystring[0] in "Hello World" = H
+
+Strings count from 0, counting characters including spaces, this is called indexing.
+
+- abcdefghijk
+mystring[1:] 'bc'
+-------
+Immutability: 'mutate' STRINGS CANNOT BE CHANGED, Must create new string!
+
+name = "Sam"
+# name[0] = 'P'
+name[1:]
+'am'
+last_letters = name[1:]
+'am'
+'P' + last_letters
+'Pam'
+-
+x = 'Hello World' 
+x + " It is beautiful outside!"
+'Hello world it is beautiful outside!'
+-
+letter = 'z'
+letter * 10
+'zzzzzzzzzz'
+
+2 + 3
+5
+
+'2' + '3'
+'23'
+
+x = 'Hello World'
+
+Hit tab after '.' to add an attribute. 
+
+EX:
+x.upper() (Uppercase all letters in a string)
+x.lower() (Lowercase all letters in a string)
+x.split() (Splits a string based on white space)
+^ ex: x = "Hi this is a string"
+x.split
+['Hi', 'this', 'is', 'a', 'string']
+
+EX 2: x.split('i')
+[ 'H', ' th', 's ', 's a str', 'ng']
+
+FAQ: 
+1) Are strings mutable? 
+A: NO! Strings are NOT mutable (meaning you can't use indexing to change individial elements of a string)
+
+2) How do I create comments on my code?
+A: Use the # to create comments in your code!
+
+------------
+Print Formatting w Strings:
+
+print('This is a string {}'.format('INSERTED'))
+this is a string INSERTED
+
+print('The'{} {} {}' .format('fox', 'brown', 'quick))
+The fox brown quick
+
+print('The'{2} {1} {0}' .format('fox', 'brown', 'quick))
+The quick brown fox
+
+inserting variables into curly braces allows you to change the format key words into a 
+organized sequence
+
+*** Float format: "{Value:width:precision f}"
+
+result = 100/777
+result
+0.1287001287001287
+print("The result was {}".format(result))
+
+print("The result was {r}".format(result))
+The result was 0.1287001287001287
+
+print("The result was {r:1.3f}".format(result))
+The result was 0.129
+
+name = "Jose"
+
+print('Hello, his name is {}'.format(name))
+Hello, his name is Jose
+
+name = "Sam"
+age = 3
+
+print(f'{name} is {age} years old.')
+Sam is 3 years old.
+
+---------------------
+
+my_list = [1,2,3]
+my_list = ['STRING', 100,23.2]
+len(my_list)
+3
+
+mylist + another_list
+['one', 'two', 'three', 'four', 'five']
+
+.append allows you to place any new item at the beginning of a list 
+
+.pop allows you to pop off any variable in a string, also returns the variable.
+
+.pop removes any item off a list when given an INDEX variable, IE: (0, 1 , 2, 3)
+
+new_list = ['a','e','x','b','c']
+num_list = [4,1,8,3]
+
+new_list.sort()
+['a','b','c','e','x']
+my_sorted_list = new_list.sort()
+type(my_sorted_list)
+NoneType
+
+None
+new_list.sort()
+my_sorted_list = new_list
+
+my_sorted_list
+
+num_list
+[4, 1, 8, 3]
+
+num_list.sort()
+num_list
+[1, 3, 4, 8]
+
+num_list.reverse()
+num_list
+[8, 4, 3, 1{
